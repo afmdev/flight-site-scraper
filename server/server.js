@@ -1,6 +1,14 @@
 import express from "express";
 import cors from "cors";
 
+
+const app = express();
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+	console.log("Alejandro: Your server is running on " + port + "port");
+});
+
+
 app.use(express.json());
 app.use(
 	express.urlencoded({
@@ -8,10 +16,3 @@ app.use(
 	})
 );
 app.use(cors());
-
-
-const app = express();
-const port = process.env.PORT || 5000;
-app.listen(port, () => {
-	console.log("Alejandro: Your server is running on " + port + "port");
-});
