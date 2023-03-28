@@ -16,21 +16,21 @@ const itemsSchema = new mongoose.Schema({
 	longDesc: {
 		type: String,
 	},
-	price: {
+	flightFrom: {
 		type: String,
 	},
-	sale: {
-		type: Number,
+	flightTo: {
+		type: String,
 	},
-	rate: {
-		type: Number,
+	dealPrice: {
+		type: String,
 	},
 	picture: {
 		type: String,
 	},
-	user_id: [{
+	dealPrice: {
 		type: String,
-	}],
+	}
 
 });
 
